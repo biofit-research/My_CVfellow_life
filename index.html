@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0f1419">
-<title>심장내과 비서</title>
+<title>금수저 윤이님의 그지병원 탐험기</title>
 
 <!-- PWA: 설치형 앱(홈화면 추가 / PWABuilder)용 설정 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -254,7 +254,7 @@
   <div class="wrap">
     <header>
       <div class="head-row">
-        <h1 id="pageTitle">심장내과 할 일<span class="sub" id="pageSub">CARDIOLOGY · TO-DO</span></h1>
+        <h1 id="pageTitle">금수저 윤이님의 그지병원 탐험기<span class="sub" id="pageSub">CARDIOLOGY · TO-DO</span></h1>
         <div class="head-btns">
           <button class="icon-btn" id="themeBtn" title="다크모드">🌓</button>
           <button class="icon-btn" id="menuBtn" title="설정">⋯</button>
@@ -434,13 +434,13 @@ if("serviceWorker" in navigator && location.protocol==="https:"){
       $("fab").classList.toggle("hidden", isER);   // 응급실 탭엔 추가버튼 없음
       $("search").classList.add("hidden");
 
-      if(tab==="todo"){ $("pageTitle").childNodes[0].nodeValue="심장내과 할 일";
+      if(tab==="todo"){ $("pageTitle").childNodes[0].nodeValue="금수저 윤이님의 그지병원 탐험기";
         $("pageSub").textContent="CARDIOLOGY · TO-DO"; $("fab").innerHTML="＋ 할 일"; }
       else if(tab==="contacts"){ $("pageTitle").childNodes[0].nodeValue="연락처";
         $("pageSub").textContent="CONTACTS"; $("search").classList.remove("hidden"); $("fab").innerHTML="＋ 연락처"; }
       else if(tab==="vault"){ $("pageTitle").childNodes[0].nodeValue="자료함";
         $("pageSub").textContent="공문서 · 캡처 보관"; $("fab").innerHTML="＋ 자료"; }
-      else { $("pageTitle").childNodes[0].nodeValue="응급실 현황";
+      else { $("pageTitle").childNodes[0].nodeValue="신촌세브란스 응급실 현황";
         $("pageSub").textContent="신촌세브란스 · E-GEN"; }
 
       if(isER){ renderER(); }
